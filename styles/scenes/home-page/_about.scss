@@ -1,0 +1,28 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 150px;
+
+
+  .h2  {
+    margin: 20px 0;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .social {
+    margin-top: 20px;
+
+  }
+
+}
+
+
+
+

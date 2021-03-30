@@ -1,0 +1,120 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: $transition;
+
+  &__item {
+    margin-left: 25px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+  }
+
+  &__link {
+    position: relative;
+    font-size: 18px;
+    color: $white;
+    padding: 20px 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 16px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: $color-site;
+      transition: $transition;
+    }
+
+    &:hover {
+      color: $color-site;
+      transition: $transition;
+
+      &:before {
+        width: 100%;
+        transition: $transition;
+      }
+    }
+  }
+
+}
+
+
+
+.menu-icon-box {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+
+
+  &:hover {
+    .menu-icon {
+      &:before,
+      &:after {
+        width: 25px;
+        transition: $transition;
+      }
+    }
+  }
+}
+
+.menu-icon {
+  position: relative;
+  width: 25px;
+  height: 2px;
+  background: $white;
+
+  &:before,
+  &:after {
+    content: '';
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    left: 0;
+    background: $white;
+    transition: $transition;
+  }
+
+  &:before {
+    top: -5px;
+  }
+
+
+  &:after {
+    bottom: -5px;
+  }
+}
+
+.menu-box {
+
+
+  &.open {
+
+    .menu {
+      right: 0;
+      transition: $transition;
+    }
+
+    .menu-icon {
+      width: 20px;
+      transform: rotate(135deg);
+      &:after{
+        width: 0;
+        transition: $transition;
+      }
+
+      &:before {
+        width: 20px;
+        top: 0;
+        transition: $transition;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}

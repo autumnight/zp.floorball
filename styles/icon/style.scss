@@ -1,0 +1,73 @@
+@import "variables";
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-city {
+  &:before {
+    content: $icon-city; 
+  }
+}
+.icon-earth-globe-with-continents-maps {
+  &:before {
+    content: $icon-earth-globe-with-continents-maps; 
+  }
+}
+.icon-logo-black {
+  &:before {
+    content: $icon-logo-black; 
+  }
+}
+.icon-map-marker {
+  &:before {
+    content: $icon-map-marker; 
+  }
+}
+.icon-ukraine {
+  &:before {
+    content: $icon-ukraine; 
+  }
+}
+.icon-back {
+  &:before {
+    content: $icon-back; 
+  }
+}
+.icon-diagram {
+  &:before {
+    content: $icon-diagram; 
+  }
+}
+.icon-medal {
+  &:before {
+    content: $icon-medal; 
+  }
+}
+.icon-next {
+  &:before {
+    content: $icon-next; 
+  }
+}
+.icon-objective {
+  &:before {
+    content: $icon-objective; 
+  }
+}
+.icon-statistics {
+  &:before {
+    content: $icon-statistics; 
+  }
+}
+

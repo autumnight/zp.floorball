@@ -1,0 +1,26 @@
+.btn__link, .info__link {
+  border: 2px solid $clear-color;
+  padding: 10px 30px;
+  color: $text;
+  transition: $transition;
+
+  &:hover {
+    transition: $transition;
+    text-decoration: none;
+  }
+}
+
+.btn-action {
+  display: inline-block;
+  border: 2px solid $color-site;
+  color: $white;
+  background: $color-site;
+  padding: 15px 40px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: transparent;
+    color: $white;
+    text-underline: none;
+  }
+}

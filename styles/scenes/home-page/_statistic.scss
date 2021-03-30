@@ -1,0 +1,22 @@
+.statistic {
+  text-align: center;
+  margin-top: 30px;
+
+  &__icon {
+    font-size: 120px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 135px;
+    font-weight: 600;
+    line-height: 100px;
+  }
+
+  &__text {
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}

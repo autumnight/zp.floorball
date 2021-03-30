@@ -1,0 +1,31 @@
+.section-info {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  background: {
+    position: center center;
+    size: cover;
+  };
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-before-dark;
+  }
+
+  &__box {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+
+    .btn-action {
+      margin-top: 50px;
+    }
+  }
+}

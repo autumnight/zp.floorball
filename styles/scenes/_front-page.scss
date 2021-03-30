@@ -1,0 +1,20 @@
+.title-index {
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  color: $clear-color;
+  margin: 0;
+
+  @media screen and (max-width: 600px) {
+      font-size: 60px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 50px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 40px;
+  }
+}

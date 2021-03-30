@@ -1,0 +1,25 @@
+.header-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:  100%;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 16px 50px;
+  align-items: center;
+  background: $header-bg;
+}
+
+.logo-brand {
+  img {
+    min-width: 180px;
+    width: 180px;
+  }
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

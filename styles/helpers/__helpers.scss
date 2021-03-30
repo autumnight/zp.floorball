@@ -1,0 +1,18 @@
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+
+.no-before {
+  &:before {
+    display: none;
+  }
+}
+
+.title-section {
+  font-size: 27px;
+  color: $light-text;
+  text-transform: uppercase;
+}

@@ -1,0 +1,70 @@
+.footer {
+
+  .social {
+    justify-content: flex-end;
+  }
+
+  &__top {
+    background: $footer-bg-top;
+    padding: 40px 0;
+
+  }
+
+  &__bottom {
+    padding: 15px 0;
+    background: $footer-bg-bottom;
+  }
+
+  &__title {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 15px;
+  }
+
+  .social__link {
+    padding: 10px;
+    background: transparent;
+    color: $clear-color;
+
+    .icon {
+      font-size: 22px;
+    }
+  }
+}
+
+.contact-box{
+
+  &__row {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    color: $clear-color;
+  }
+
+  &__icon {
+    color: $clear-color;
+    font-size: 30px;
+    margin-right: 15px;
+  }
+
+  &__text {
+    color: #ccc;
+  }
+  .tel, .mail {
+    color: #ccc;
+  }
+}
+
+.copyright {
+  color: $clear-color;
+  font-weight: 100;
+  text-align: center;
+}
+
+.logo-bottom {
+  max-width: 180px;
+  width: 180px;
+  margin: auto auto 20px auto;
+}

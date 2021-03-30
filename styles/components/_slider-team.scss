@@ -1,0 +1,60 @@
+.slider-team {
+  text-align: center;
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    font-size: 0;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    background: $color-site;
+    border-radius: 3px;
+    border: 2px solid $color-site;
+    color: $white;
+    transition: $transition;
+
+    &:hover {
+      background: transparent;
+      color: $color-site;
+      transition: $transition;
+    }
+
+    &.slick-prev,
+    &.slick-next {
+      &:before {
+        font-size: 20px;
+      }
+    }
+
+    &.slick-next {
+      right: -70px;
+
+    }
+
+    &.slick-prev {
+      left: -70px;
+
+    }
+  }
+
+  &__item {
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+
+  &__name {
+    color: $text;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px 0;
+    line-height: 30px;
+  }
+  &__position {
+    color: $text;
+    font-weight: 600;
+    font-size: 15px;
+  }
+}
